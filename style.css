@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;     
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none;
+}
+
+.container {
+    margin: 100px auto;
+    padding-top: 8px;
+    background: #d3caac;
+    border: 6px solid #a19673;
+    border-radius: 2px;
+    width: 450px;
+}
+
+/* =====================
+        Display
+===================== */
+
+.display {
+    display: block;
+    background: white;
+    border: 1px solid #9b937a;
+    border-radius: 10px;
+    width: 90%;
+    height: 6rem;
+    margin: 20px auto;
+    text-align: right;
+    padding: 0 10px;
+    box-shadow: 0 0 4px black inset;
+}
+
+.log {
+    font-size: 12px;
+}
+
+.log p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1em;
+}
+
+.queue {
+    font-size: 36px;
+}
+
+.queue p {
+    margin-top: 2px;
+}
+
+/* =====================
+        Buttons
+===================== */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+}
+.row:last-child {
+    padding-bottom: 16px;
+}
+.button {
+    font-size: 32px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 6px;
+    margin: 0 8px;
+    flex: 1 0 auto;
+    width: 20%;
+    height: 50px;
+    color: white;
+    background: #979183;
+    border-radius: 8px;
+    transition: background 0.02s;
+}
+
+.button:hover {
+    transform: scale(1.04);
+    box-shadow: 1px 1px 2px #3b3b3b;
+}
+
+.num {
+    background: #777777;
+}
+
+.clicked {
+    background: #5f5e5a;
+    box-shadow: 1px 1px 2px #3b3b3b inset;
+}
